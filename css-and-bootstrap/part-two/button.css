@@ -1,0 +1,19 @@
+button {
+  background-color: rgba(84, 84, 245, 0.8);
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  outline: none;
+  position: relative;
+  top: 20px;
+  left: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkslateblue;
+}
+
