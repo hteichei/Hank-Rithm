@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  var wordCount = 10;
-  var guessCount = 4;
-  var password = '';
+  const wordCount = 10;
+  const guessCount = 4;
+  const password = '';
 
-  var start = $('#start').on('click', function () {
+  const start = $('#start').on('click', function () {
     $('#start-screen').toggleClass('show hide');
     $('#game-screen').toggleClass('hide show');
     startGame();
@@ -17,11 +17,11 @@ $(document).ready(function () {
 
   function startGame() {
     // get random words and append them to the DOM
-    var wordList = $('#word-list');
+    const wordList = $('#word-list');
     // 'words' variable is from words.js
-    var randomWords = getRandomValues(words, wordCount); // eslint-disable-line no-undef
+    const randomWords = getRandomValues(words, wordCount); // eslint-disable-line no-undef
     randomWords.forEach((word) => {
-      var li = wordlist.append("<li>word</li>");
+      let li = wordlist.append("<li>word</li>");
     });
 
     // set a secret password and the guess count display
@@ -38,10 +38,10 @@ $(document).ready(function () {
   }
 
   function shuffle(array) {
-    var arrayCopy = [...array];
+    let arrayCopy = [...array];
     for (let idx1 = arrayCopy.length - 1; idx1 > 0; idx1--) {
       // generate a random index between 0 and idx1 (inclusive)
-      var idx2 = Math.floor(Math.random() * (idx1 + 1));
+      let idx2 = Math.floor(Math.random() * (idx1 + 1));
 
       // swap elements at idx1 and idx2
       [arrayCopy[idx1], arrayCopy[idx2]] = [arrayCopy[idx2], arrayCopy[idx1]];
@@ -55,7 +55,7 @@ $(document).ready(function () {
   }
 
   function updateGame(e) {
-    var target = $(event.target);
+    const target = $(event.target);
     if (target.is('li') && !target.hasClass('disabled')) {
       // grab guessed word, check it against password, update view
       //should i use .text(), or .val() here?  
@@ -80,7 +80,7 @@ $(document).ready(function () {
     if (word1.length !== word2.length) {
       throw 'Words must have the same length';
     }
-    var count = 0;
+    let count = 0;
     for (var i = 0; i < word1.length; i++) {
       if (word1[i] === word2[i]) count++;
     }
