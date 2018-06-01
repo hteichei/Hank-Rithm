@@ -55,7 +55,8 @@ let { a, b } = obj.numbers;
 // arr[1] = temp;
 
 // ES6: 
-
+let arr = [1, 2];
+[arr[1], arr[0]] = [arr[0], arr[1]];
 
 
 
