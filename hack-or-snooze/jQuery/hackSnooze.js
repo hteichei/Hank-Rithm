@@ -14,3 +14,13 @@ $('form').on('submit', function(event) {
   );
   $(this)[0].reset();
 });
+
+// $('.fa-star').on('click', function() {
+//   $(this).css('color', 'olive');
+// });
+
+$(document).ready(function() {
+  $(document).on('click', '.fa-star', function() {
+    $(this).toggleClass('farClicked', 'far');
+  });
+});

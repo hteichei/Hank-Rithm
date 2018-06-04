@@ -61,3 +61,8 @@ li {
   font-size: 10px;
   padding: 0 10px;
 }
+
+.farClicked {
+  color: gold;
+  font-weight: bold;
+}
