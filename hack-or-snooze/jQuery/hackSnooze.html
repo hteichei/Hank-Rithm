@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="hackSnooze.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+  <div class='container'>
+    <h1>HACK-OR-SNOOZE <span id='links'> <span id='formToggle'>submit |</span> <span>favorites</span></span></h1>
+    <div id='formContainer'>
+      <form action="">
+        <label for="title">Title:
+            <input type="text" placeholder='title' id='title' value=''>
+        </label>
+        <label for="url">URL:
+            <input type="url" placeholder='URL' id='url' value='' required>
+        </label>
+        <button id='submitBtn' type='submit'>Submit</button>
+      </form>
+      <div id='articleList'>
+        <ol>
+        </ol>
+    </div>
+    </div>
+  </div>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src=hackSnooze.js></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+  background-color: purple;
+}
+
+h1 {
+  background-color: red;
+  color: white;
+  width: 680px;
+  padding: 10px;
+  display: relative;
+  margin: 0 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#links {
+  font-size: 20px;
+  padding: 0 80px;
+}
+
+.container {
+  background-color: lightcyan;
+  width: 700px;
+  position: relative;
+  top: 50px;
+  left: 25%;
+  right: 25%;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  padding: 5px;
+}
+
+#title,
+#url {
+  display: inline-block;
+}
+
+.far {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 5px;
+}
+
+.far:hover {
+  color: gold;
+  font-weight: bold;
+}
+
+#formContainer {
+  padding: 10px;
+}
+
+li {
+  font-size: 14px;
+}
+
+#hostName {
+  font-size: 10px;
+  padding: 0 10px;
+}
