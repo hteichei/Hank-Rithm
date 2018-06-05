@@ -58,11 +58,25 @@ li {
 }
 
 #hostName {
-  font-size: 10px;
+  font-size: 11.5px;
   padding: 0 10px;
 }
 
 .farClicked {
   color: gold;
-  font-weight: bold;
+}
+
+li {
+  font-size: 16px;
+}
+
+#favorites {
+  position: relative;
+  color: black;
+  display: none;
+}
+
+#favoritesClicked {
+  position: relative;
+  color: red;
 }
