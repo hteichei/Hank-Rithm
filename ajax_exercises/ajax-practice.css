@@ -27,3 +27,11 @@ body {
   max-width: 700px;
   padding: 10px;
 }
+
+img {
+  border-radius: 10px;
+  border: 1px inset black;
+  height: 200px;
+  width: 200px;
+  margin: 10px 10px;
+}
