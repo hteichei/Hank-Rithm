@@ -21,18 +21,21 @@ $(document).ready(function() {
     $(this)[0].reset();
   });
 
+  //favorites code block not fully functional:
+
   //give favorite star yellow color when clicked and add link to favorites div
   $(document).on('click', '.fa-star', function() {
     $(this).toggleClass('farClicked', 'far');
-    $('#favorites')
-      .append('li')
-      .hasClass('farClicked');
+    if ($(this).hasClass('farClicked')) {
+      $('#favorites').append('li');
+      // .hasClass('farClicked');
+    } else {
+      $('#favorites').remove();
+    }
+  });
+  //toggling works for class, but display is still set to none;
+  $('#favoritesLink').on('click', function(e) {
+    $('#favoritesDiv').toggleClass('favoritesClicked', 'favorites');
+    $('#formContainer').toggleClass('formContainerHidden');
   });
 });
-//following code not working:
-
-//   //toggling works for class, but display is still set to none;
-//   $('#favoritesLink').on('click', function() {
-//     // $('#favorites li').toggleClass('favoritesClicked', 'favorites');
-//     $('#favorites li').show();
-//   });

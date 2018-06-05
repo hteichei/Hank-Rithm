@@ -70,13 +70,18 @@ li {
   font-size: 16px;
 }
 
-#favorites {
+.favorites {
   position: relative;
   color: black;
   display: none;
 }
 
-#favoritesClicked {
+.favoritesClicked {
   position: relative;
-  color: red;
+  display: block;
+  padding: 10px;
+}
+
+.formContainerHidden {
+  display: none;
 }
