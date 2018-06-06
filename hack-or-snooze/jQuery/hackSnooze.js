@@ -16,7 +16,7 @@ $(document).ready(function() {
         .split('/')[2]
         .split('.')[1] + '.com';
     $('ol').append(
-      `<li><i class="far fa-star"></i>${newArticle} <span id='hostName'>(${url})</span></li>`
+      `<li class='liRegular'><i class="far fa-star"></i>${newArticle} <span id='hostName'>(${url})</span></li>`
     );
     $(this)[0].reset();
   });
@@ -24,18 +24,30 @@ $(document).ready(function() {
   //favorites code block not fully functional:
 
   //give favorite star yellow color when clicked and add link to favorites div
-  $(document).on('click', '.fa-star', function() {
+  $(document).on('click', 'fa-star', function() {
     $(this).toggleClass('farClicked', 'far');
-    if ($(this).hasClass('farClicked')) {
-      $('#favorites').append('li');
+    if ($('.liRegular > i').hasClass('farClicked')) {
+      $('#favorites').append('<p>');
       // .hasClass('farClicked');
     } else {
       $('#favorites').remove();
     }
   });
   //toggling works for class, but display is still set to none;
-  $('#favoritesLink').on('click', function(e) {
+  $('#favoritesLink').on('click', function() {
     $('#favoritesDiv').toggleClass('favoritesClicked', 'favorites');
     $('#formContainer').toggleClass('formContainerHidden');
   });
 });
+
+// //give favorite star yellow color when clicked and add link to favorites div
+// $(document).on('click', '.fa-star', function() {
+//   $('.liRegular').toggleClass('farClicked', 'far');
+
+//   if ($('.liRegular').hasClass('farClicked')) {
+//     $('#favorites').append('<p>');
+//     // .hasClass('farClicked');
+//   } else {
+//     $('#favorites').remove();
+//   }
+// });
